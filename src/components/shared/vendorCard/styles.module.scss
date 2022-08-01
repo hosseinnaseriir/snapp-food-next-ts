@@ -1,0 +1,98 @@
+.vendor-card {
+  min-width: 28rem;
+  border-radius: var(--radius-sm);
+  height: 25rem;
+  box-shadow: var(--box-shadow-a);
+  overflow: hidden;
+  margin: 2.4rem 1.6rem;
+  position: relative;
+  cursor: pointer;
+  .best-coupon {
+    position: absolute;
+    background-color: var(--white);
+    color: var(--secondary-color);
+    font-size: var(--text-sm);
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+    top: 1rem;
+    font-weight: 700;
+  }
+  img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
+  figcaption {
+    height: 50%;
+    padding: 2rem 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .vendor-logo {
+      padding: 0.4rem;
+      height: 6.4rem;
+      width: 6.4rem;
+      border-radius: var(--radius-md);
+      background-color: var(--white);
+      box-shadow: var(--box-shadow-b);
+      overflow: hidden;
+      margin-top: -7.7rem;
+      position: relative;
+      z-index: 1;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .badge {
+      width: max-content;
+      background-color: var(--primary-color);
+      border-radius: var(--radius-sm);
+      color: var(--white);
+      font-size: var(--text-sm);
+      padding: 0.1rem 0.4rem;
+    }
+    .rate-number {
+      margin-right: 0.8rem;
+      color: var(--secondary-color);
+      background-color: var(--secondary-light-color);
+    }
+    .vendor-title {
+      display: flex;
+      justify-content: space-between;
+      .vendor-name {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        h4 {
+          font-size: var(--text-md);
+        }
+      }
+      .vendor-rate {
+        font-size: var(--text-sm);
+        color: var(--grey);
+      }
+    }
+    .vendor-tags {
+      font-size: var(--text-sm);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .delivery-options {
+      font-size: var(--text-sm);
+      display: flex;
+      justify-content: space-between;
+      .delivery-type {
+        color: var(--grey);
+        margin-left: 0.8rem;
+      }
+      .delivery-time {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+      }
+    }
+  }
+}

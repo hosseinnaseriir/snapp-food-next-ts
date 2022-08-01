@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/IRANSans/fonts/IRANSans.eot");
+  src: url("../fonts/IRANSans/fonts/IRANSans.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/IRANSans/fonts/IRANSans.otf") format("otf"),
+    url("../fonts/IRANSans/fonts/IRANSans.svg") format("svg"),
+    url("../fonts/IRANSans/fonts/IRANSans.ttf") format("truetype"),
+    url("../fonts/IRANSans/fonts/IRANSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/IRANSans_Light/fonts/IRANSans_Light.eot");
+  src: url("../fonts/IRANSans_Light/fonts/IRANSans_Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/IRANSans_Light/fonts/IRANSans_Light.otf") format("otf"),
+    url("../fonts/IRANSans_Light/fonts/IRANSans_Light.svg") format("svg"),
+    url("../fonts/IRANSans_Light/fonts/IRANSans_Light.ttf") format("truetype"),
+    url("../fonts/IRANSans_Light/fonts/IRANSans_Light.woff") format("woff");
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  direction: rtl;
+  font-size: 1.6rem;
+  font-family: "IRANSans";
+  color: var(--text-color);
+  background-color: var(--bg-white-color);
+}

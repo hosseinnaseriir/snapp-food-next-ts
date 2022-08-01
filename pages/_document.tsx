@@ -1,15 +1,18 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import React, { ReactElement } from 'react';
+import Document, {
+  Html, Head, Main, NextScript,
+} from 'next/document';
 
 export default class MyDocument extends Document {
-  render() {
+  render(): ReactElement {
     return (
-      <Html lang="en">
+      <Html lang="fa_IR">
         <Head />
         <body>
           <Main />
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
